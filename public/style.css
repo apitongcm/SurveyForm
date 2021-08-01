@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&family=Rubik:wght@500&display=swap');
+
+:root{
+
+    /* 200,400,700 */
+    --font200:'Montserrat', sans-serif;
+    --font500:'Rubik', sans-serif;
+    
+    /* primary */
+    --color600:orangered;
+    --color700:#334756;
+    --color800:#2C394B;
+    --color900:#082032;
+
+
+    /* neutral */
+    --color100:#FDEFEF;
+    --color200:#F4DFD0;
+    --color300:#DAD0C2;
+    --color400:#CDBBA7;
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.container{
+    background:linear-gradient(rgba(0,0,255,0.3),rgba(0,0,255,0.5)),url("./background.jpg");
+    background-size:cover;
+    background-position:center;
+    height:auto;
+    padding:20vh 20vw;
+}
+
+form{
+    background:linear-gradient(rgba(0,0,50,0.6),rgba(0,0,0,0.8));
+    padding:10vh 5vw;
+    box-shadow:0 4px 8px 0 var(--color600);
+    
+}
+
+#intro{
+     padding: 2vh 2vw;
+     font-size:1.5vw;
+     font-family: var(--font500);
+     color:var(--color100);
+     text-shadow: 2px 2px var(--color800);
+}
+
+label { 
+    font-size:1.3vw;
+    color: var(--color400);
+    letter-spacing:0.25vw;
+    font-family: var(--font200);
+}
+
+#name, #email, #number, select{
+    background:linear-gradient(to right,rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.6));
+    width:100%;
+    height:40px;
+    text-align: center;
+    font-size:1.3vw;
+    border: none;
+    margin-bottom:5vh;
+    font-family: var(--font200);
+    font-weight:700;
+}
+
+input[type=number]{
+    -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button, 
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin:0;
+}
+
+.card{
+    background: var(--color100);
+    padding:5vh 3vw;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+}
+
+.card:hover{
+    box-shadow: 0 8px 16px 0 black;
+}
+
+.card label{
+    color:black;
+}
+
+input:hover{
+    cursor: pointer;
+}
+
+#comment{
+    width:100%;
+    font-size:1.3vw;
+}
+
+#submit {
+    width:100%;
+    height:60px;
+    font-size:2vw;
+    color:var(--color100);
+    background:orangered;
+    border:none;
+}
+
+#submit:hover{
+    background:red;
+}
+
+
+@media only screen and (max-width:505px){
+    .container{
+        padding:10vh 5vw;
+    }
+
+    form{
+        padding:5vh 3vw;
+    }
+
+    #intro{
+        font-size:4.5vw;
+    }
+
+    label{
+        font-size:4vw;
+    }
+
+    #name, #email, #number, select{
+        font-size:3vw;
+        margin-bottom:2vh;
+    }
+
+    #comment{
+        height:200px;
+    }
+
+    #submit{
+        font-size: 5vw;
+    }
+}
+
+@media screen and (max-width:900px) {
+
+    .container{
+        padding:50px;
+    }
+    form{
+        padding:5vh 3vw;
+    }
+
+    #intro{
+        font-size:3.5vw;
+    }
+
+    label{
+        font-size:2.7vw;
+    }
+
+    #name, #email, #number, select{
+        font-size:2.5vw;
+        margin-bottom:2vh;
+    }
+
+    #comment{
+        font-size:2.5vw;
+        height:200px;
+    }
+
+    #submit{
+        font-size: 4vw;
+    }
+    
+}
+
+
+
+
